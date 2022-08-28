@@ -13,7 +13,7 @@ botão.onclick = () => {
         l3.focus();
     } else if(l1.value <= 0 || l2.value <= 0 || l3.value <= 0) {
         alert("Insira valores válidos!!");
-    } else tipoTri.value = resultado(l1.value, l2.value, l3.value);
+    } tipoTri.value = resultado(l1.value, l2.value, l3.value);
 }
 
 const resultado = (num1,num2,num3) => {
@@ -21,7 +21,7 @@ const resultado = (num1,num2,num3) => {
         return ("Equilátero");
     } else if (num1 == num2 || num1 == num3 || num2 == num3) {
         return("Isósceles");
-    } else return("Escaleno");
+    } return("Escaleno");
 }
 
 
@@ -38,7 +38,7 @@ resolver.onclick = () => {
         SegundoValor.focus();
     } else if (TerceiroValor.value == "") {
         TerceiroValor.focus();
-    } else resposta.value = bhaskara(PrimeiroValor.value, SegundoValor.value, TerceiroValor.value);
+    } resposta.value = bhaskara(PrimeiroValor.value, SegundoValor.value, TerceiroValor.value);
 }
 
 const bhaskara = (valor1, valor2, valor3) => {
@@ -52,7 +52,6 @@ const bhaskara = (valor1, valor2, valor3) => {
 }
 
 
-
 const nota = document.getElementById("NotaAluno")
 const calculo = document.getElementById("calcular")
 const aprovacao = document.getElementById("AprovacaoAluno")
@@ -62,7 +61,7 @@ calculo.onclick = () => {
         nota.focus();
     }  else if(nota.value < 0) {
         alert("Insira um valor válido");
-    } else aprovacao.value = CalculoMedia(nota.value);
+    } aprovacao.value = CalculoMedia(nota.value);
 }
 
 const CalculoMedia = (valor1) => {
@@ -78,16 +77,13 @@ const CalculoMedia = (valor1) => {
     } else if ((valor1 + 1) % 5 === 0) {
         valor1 += 1;
         return(`Sua nota foi ${valor1}. Parabéns! Você foi aprovado.`);
-    } else return(`Sua nota foi ${valor1}. Parabéns! Você foi aprovado`);
+    } return(`Sua nota foi ${valor1}. Parabéns! Você foi aprovado`);
 }
-
-
 
 
 const numeral = document.getElementById("limite")
 const BtnArray = document.getElementById("faz_array")
 const array_final = document.getElementById("array_total")
-
 
 const lista =[];
 
@@ -102,7 +98,7 @@ const contagem = (number) => {
     } else if (i % 9 == 0) {
         y = "Moura";
         lista.push(y);
-    } else lista.push(i);
+    } lista.push(i);
 }  
 }
 
