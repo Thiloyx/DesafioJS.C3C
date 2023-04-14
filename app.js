@@ -3,6 +3,7 @@ const l2 = document.getElementById("l2")
 const l3 = document.getElementById("l3")
 const tipoTri = document.getElementById("TipoTriangulo")
 const botão = document.getElementById("descobrir")
+const blue = 220
 
 botão.onclick = () => {
     if(l1.value == "") {
